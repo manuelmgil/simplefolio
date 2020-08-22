@@ -1,10 +1,13 @@
 {
   "name": "simplefolio",
+  "homepage": "https://manuelmgil.github.io/simplefolio",
   "version": "1.0.1",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {
